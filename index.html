@@ -6,15 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-<p>hridoy</p>
-<p>rafik</p>
-<p>islam</p>
+<h1 id="myev">h1</h1>
+<p class="koi">p</p>
+<h3>tag</h3>
+<button onclick="myEven()">click</button>
     <script>
 
- var MyElements = document.getElementsByTagName('p')
-  MyElements [2].innerHTML='eid mobeok'
-
-  
+  function  myEven(){
+     document.querySelector('h3').innerHTML="my name is"
+     document.querySelector('.koi').innerHTML="rk rafik"
+     document.querySelector('#myev').innerHTML="hridoy"
+  }
 
 
     </script>
