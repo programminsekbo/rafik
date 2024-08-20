@@ -1,7 +1,8 @@
-let hridoy = "my name is";
+var http=require('http');
+var server=http.createServer(function(req,res){
 
+    res.end("hello word")
+})
 
-function ridoy() {
-    console.log("who are you")
-}
-export{hridoy,ridoy}
+server.listen(6767);
+console.log("hello is sus");
