@@ -1,8 +1,14 @@
-var http=require('http');
-var server=http.createServer(function(req,res){
+const http=require("http");
+const server=http.createServer(function (req,res){
+ if(req.url=="/"){
+    res.end("my fist home pag")
+ }else if(req.url=="/log"){
 
-    res.end("hello word")
+    res.end("loging page")
+ }
+
+
 })
+server.listen(7070)
 
-server.listen(6767);
-console.log("hello is sus");
+console.log("server is oky")
