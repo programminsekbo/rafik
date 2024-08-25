@@ -1,14 +1,45 @@
-const http=require("http");
-const server=http.createServer(function (req,res){
- if(req.url=="/"){
-    res.end("my fist home pag")
- }else if(req.url=="/log"){
+var express=require('express');
 
-    res.end("loging page")
- }
+app=express();
+
+app.get("/", function (req,res){
+
+res.send("hello word");
 
 
-})
-server.listen(7070)
 
-console.log("server is oky")
+});
+
+
+
+
+app.get("/home", function (req,res){
+let myapi=[
+   {
+
+      name:"hridoy",
+      roll:5210,
+      home:"dinajpur",
+   },
+   {
+
+      name:"hridoy",
+      roll:52040,
+      home:"dinajpur",
+   },
+   {
+
+      name:"hridoy",
+      roll:52040,
+      home:"dinajpur",
+   },
+]
+   res.json(myapi);
+   
+   
+   
+   });
+app.listen(8000,function(){
+
+   console.log("server is ok");
+});
