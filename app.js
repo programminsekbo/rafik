@@ -60,9 +60,23 @@ let myapi=[
       
       
       });
+
+      
+
+   app.get("/sis", function (req,res){
+
+      res.cooike("name","hridoy");
+      res.cooike("roii","500");s
+      res.cooike("home","dinajpur");
+      res.end("hello word my jan")
+   
+         
+         
+         
+         });
       
       
-app.listen(8070,function(){
+app.listen(7070,function(){
 
    console.log("server is ok");
 });
