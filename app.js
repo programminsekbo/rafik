@@ -39,7 +39,30 @@ let myapi=[
    
    
    });
-app.listen(8000,function(){
+
+
+
+
+
+
+
+
+
+
+   app.get("/sis", function (req,res){
+
+   res.append("name","hridoy");
+   res.append("roii","500");
+   res.append("home","dinajpur");
+   res.status(200).end("hello word my jan")
+
+      
+      
+      
+      });
+      
+      
+app.listen(8070,function(){
 
    console.log("server is ok");
 });
