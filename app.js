@@ -63,11 +63,11 @@ let myapi=[
 
       
 
-   app.get("/sis", function (req,res){
+   app.get("/ridoy", function (req,res){
 
-      res.cooike("name","hridoy");
-      res.cooike("roii","500");s
-      res.cooike("home","dinajpur");
+      res.cookie('name','hridoy');
+      res.cookie('roii','500');
+      res.cookie('home','dinajpur');
       res.end("hello word my jan")
    
          
@@ -75,8 +75,21 @@ let myapi=[
          
          });
       
+
+         app.get("/rafik", function (req,res){
+
+            res.clearCookie('name');
+            res.clearCookie('roii');
+            res.clearCookie('home');
+            res.end("hello word my jan")
+         
+               
+               
+               
+               });
+            
       
-app.listen(7070,function(){
+app.listen(7060,function(){
 
    console.log("server is ok");
 });
